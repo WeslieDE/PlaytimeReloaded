@@ -1,5 +1,7 @@
 package li.inc.PlaytimeReloaded;
 
+import com.earth2me.essentials.Essentials;
+import com.earth2me.essentials.User;
 import li.inc.PlaytimeReloaded.DataStore.Config;
 import li.inc.PlaytimeReloaded.DataStore.DB.MySQL;
 import li.inc.PlaytimeReloaded.DataStore.UUIDCache;
@@ -22,6 +24,8 @@ public class Playtime extends JavaPlugin implements Listener
     private Config m_config;
     private MySQL m_mysql;
 
+    private Essentials m_pluginEssentials;
+
     @Override
     public void onEnable()
     {
@@ -31,6 +35,8 @@ public class Playtime extends JavaPlugin implements Listener
         //Load the text from the lang config.
         m_mysql = new MySQL(this, m_config);
 
+        //Load Essentials
+        m_pluginEssentials = (Essentials)Bukkit.getServer().getPluginManager().getPlugin("Essentials");
 
         getServer().getPluginManager().registerEvents(this, this);
 
@@ -110,7 +116,10 @@ public class Playtime extends JavaPlugin implements Listener
     {
         for(Player _dieserSpieler : getServer().getOnlinePlayers())
         {
-            addPlayTime(_dieserSpieler.getUniqueId(), 1);
+            User _userData = m_pluginEssentials.getUser(_dieserSpieler);
+
+            if(!_userData.isAfk())
+                addPlayTime(_dieserSpieler.getUniqueId(), 1);
         }
     }
 
