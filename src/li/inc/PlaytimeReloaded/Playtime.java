@@ -2,6 +2,7 @@ package li.inc.PlaytimeReloaded;
 
 import li.inc.PlaytimeReloaded.DataStore.Config;
 import li.inc.PlaytimeReloaded.DataStore.DB.MySQL;
+import li.inc.PlaytimeReloaded.DataStore.UUIDCache;
 import li.inc.PlaytimeReloaded.DataStore.UUIDFetcher;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -101,6 +102,7 @@ public class Playtime extends JavaPlugin implements Listener
             event.getPlayer().sendMessage(getChatMessage(m_config.getTextYourCurrentPlaytime(), event.getPlayer().getName(), m_mysql.getPlayerTime(event.getPlayer().getUniqueId()), 0));
         }
 
+        UUIDCache.update(event.getPlayer().getName(), event.getPlayer().getUniqueId());
         addPlayTime(event.getPlayer().getUniqueId(), 0);
     }
 
@@ -131,26 +133,18 @@ public class Playtime extends JavaPlugin implements Listener
             }
         }
 
-        try
+        UUID _playerUUID = UUIDCache.get(_playerName);
+
+        OfflinePlayer _offlinePlayer = Bukkit.getOfflinePlayer(_playerUUID);
+
+        if(_offlinePlayer != null)
         {
-            UUIDFetcher _uuidFetcher = new UUIDFetcher(Arrays.asList(_playerName));
-            Map<String, UUID> _fetcherResponse = _uuidFetcher.call();
-            UUID _playerUUID = _fetcherResponse.get(_playerName);
-
-            OfflinePlayer _offlinePlayer = Bukkit.getOfflinePlayer(_playerUUID);
-
-            if(_offlinePlayer != null)
-            {
-                if(!_offlinePlayer.hasPlayedBefore())
-                    return null;
-
-                return _offlinePlayer.getUniqueId();
-            }else{
+            if(!_offlinePlayer.hasPlayedBefore())
                 return null;
-            }
-        }catch(Exception _e)
-        {
-            return null;
+
+            return _offlinePlayer.getUniqueId();
+        }else{
+                return null;
         }
     }
 
