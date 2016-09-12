@@ -77,7 +77,7 @@ public class Playtime extends JavaPlugin implements Listener
                         Player _player = (Player)sender;
                         if(_player.hasPermission("playtime.use.others"))
                         {
-                            _player.sendMessage(getChatMessage(m_config.getTextYourCurrentPlaytime(), args[0], m_mysql.getPlayerTime(_searchPlayer), 0));
+                            _player.sendMessage(getChatMessage(m_config.getTextPlayerPlaytimeIs(), args[0], m_mysql.getPlayerTime(_searchPlayer), 0));
                         }else{
                             _player.sendMessage(getChatMessage(m_config.getTextNoPermission(), args[0], 0, 0));
                         }
@@ -103,11 +103,10 @@ public class Playtime extends JavaPlugin implements Listener
     @EventHandler
     public void onPlayerJoin(PlayerJoinEvent event)
     {
-        if(event.getPlayer().hasPermission("playtime.use.others"))
+        if(event.getPlayer().hasPermission("playtime.use") && event.getPlayer().hasPermission("playtime.login"))
         {
             event.getPlayer().sendMessage(getChatMessage(m_config.getTextYourCurrentPlaytime(), event.getPlayer().getName(), m_mysql.getPlayerTime(event.getPlayer().getUniqueId()), 0));
         }
-
     }
 
     private void refreshPlaytime()
@@ -162,8 +161,6 @@ public class Playtime extends JavaPlugin implements Listener
         long hours = seconds % 86400 / 3600;
         long days = seconds / 86400;
 
-        System.out.println("Day " + days + " Hour " + hours + " Minute " + minutes + " Seconds " + sec);
-
         return new long[]{days, hours, minutes, sec};
     }
 
@@ -173,7 +170,7 @@ public class Playtime extends JavaPlugin implements Listener
 
         long seconds = _timeInMin * 60;
 
-        if(seconds == 0)
+        if(seconds != 0)
         {
             long[] _time = calculateTime(seconds);
 

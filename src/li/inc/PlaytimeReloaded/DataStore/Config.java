@@ -7,12 +7,6 @@ import org.bukkit.plugin.Plugin;
 public class Config 
 {
 	//MySQL
-	private boolean m_useMySQL = false;
-	public boolean getUseMySQL()
-	{
-		return m_useMySQL;
-	}
-
 	private String m_MySqlHost = "127.0.0.1";
 	public String getMysqlHost()
 	{
@@ -129,7 +123,6 @@ public class Config
 	
 	private void getConfigValues(FileConfiguration _config)
 	{
-		m_useMySQL = _config.getBoolean("enable.mysql");
 		m_MySqlHost = _config.getString("mysql.host");
 		m_MySqlPort = _config.getInt("mysql.port");
 		m_MySqlDB = _config.getString("mysql.db");
@@ -153,8 +146,6 @@ public class Config
 	
 	private void saveConfigValues(FileConfiguration _config)
 	{
-		_config.set("enable.mysql", m_useMySQL);
-		
 		_config.set("mysql.host", m_MySqlHost);
 		_config.set("mysql.port", m_MySqlPort);
 		_config.set("mysql.db", m_MySqlDB);

@@ -7,16 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2349fe23-928a-4003-8915-70ed3a9a49d9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/PlaytimeReloaded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/spigot_1_10_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/DataStore/Config.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/DataStore/DB/MySQL.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/DataStore/DB/MySQLTools.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/DataStore/UUIDFetcher.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/Playtime.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/DataStore/Config.java" afterPath="$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/DataStore/Config.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/Playtime.java" afterPath="$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/Playtime.java" />
     </list>
     <ignored path="PlaytimeReloaded.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,11 +29,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Playtime.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Playtime.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/Playtime.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="65" column="47" selection-start-line="65" selection-start-column="47" selection-end-line="65" selection-end-column="47" />
+            <state relative-caret-position="223">
+              <caret line="108" column="9" selection-start-line="108" selection-start-column="9" selection-end-line="108" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1268#1269#0" expanded="true" />
@@ -80,11 +72,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Config.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Config.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/DataStore/Config.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="168" column="38" selection-start-line="168" selection-start-column="38" selection-end-line="168" selection-end-column="38" />
+            <state relative-caret-position="155">
+              <caret line="148" column="0" selection-start-line="148" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -147,8 +139,8 @@
         <option value="$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/DataStore/DB/MySQLTools.java" />
         <option value="$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/DataStore/UUIDFetcher.java" />
         <option value="$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/DataStore/DB/MySQL.java" />
-        <option value="$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/DataStore/Config.java" />
         <option value="$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/Playtime.java" />
+        <option value="$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/DataStore/Config.java" />
       </list>
     </option>
   </component>
@@ -639,14 +631,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/DataStore/Config.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="168" column="38" selection-start-line="168" selection-start-column="38" selection-end-line="168" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/DataStore/DB/MySQL.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="291">
@@ -659,13 +643,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/Playtime.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="65" column="47" selection-start-line="65" selection-start-column="47" selection-end-line="65" selection-end-column="47" />
+        <state relative-caret-position="223">
+          <caret line="108" column="9" selection-start-line="108" selection-start-column="9" selection-end-line="108" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1268#1269#0" expanded="true" />
             <element signature="e#1317#1318#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/DataStore/Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="148" column="0" selection-start-line="148" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
