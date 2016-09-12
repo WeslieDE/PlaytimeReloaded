@@ -80,19 +80,19 @@ public class Config
         return m_textNoPermission;
     }
 
-    private String m_textDateDays = "Days";
+    private String m_textDateDays = "&aDays&6";
     public String getTextDateDays()
     {
         return m_textDateDays;
     }
 
-    private String m_textDateHours = "Hours";
+    private String m_textDateHours = "&aHours&6";
     public String getTextDateHours()
     {
         return m_textDateHours;
     }
 
-    private String m_textDateMinutes = "Minutes";
+    private String m_textDateMinutes = "&aMinutes&a";
     public String getTextDateMinutes()
     {
         return m_textDateMinutes;
