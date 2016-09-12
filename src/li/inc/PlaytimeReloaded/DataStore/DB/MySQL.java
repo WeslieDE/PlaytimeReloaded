@@ -7,9 +7,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.UUID;
 
-/**
- * Created by Christopher on 12.09.2016.
- */
 public class MySQL
 {
     private Plugin m_plugin;
