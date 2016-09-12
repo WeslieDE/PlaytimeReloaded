@@ -41,6 +41,7 @@ public class UUIDCache
             return _playerUUID;
         }catch(Exception _e)
         {
+            update(_playerName, null);
             return null;
         }
     }
