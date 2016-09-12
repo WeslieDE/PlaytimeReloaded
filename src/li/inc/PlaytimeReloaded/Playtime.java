@@ -135,6 +135,9 @@ public class Playtime extends JavaPlugin implements Listener
 
         UUID _playerUUID = UUIDCache.get(_playerName);
 
+        if(_playerUUID == null)
+            return null;
+
         OfflinePlayer _offlinePlayer = Bukkit.getOfflinePlayer(_playerUUID);
 
         if(_offlinePlayer != null)
