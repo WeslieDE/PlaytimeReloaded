@@ -1,0 +1,8 @@
+name: PlaytimeReloaded
+main: li.inc.PlaytimeReloaded.Playtime
+version: 1.0
+
+commands:
+   playtime:
+      description: Shows your playtime
+      usage: /playtime

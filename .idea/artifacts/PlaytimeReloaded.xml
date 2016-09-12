@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="PlaytimeReloaded">
+    <output-path>$USER_HOME$/Desktop/Minecraft-Dev/Testserver/plugins</output-path>
+    <root id="archive" name="PlaytimeReloaded.jar">
+      <element id="module-output" name="PlaytimeReloaded" />
+      <element id="file-copy" path="$PROJECT_DIR$/plugin.yml" />
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+      </element>
+    </root>
+  </artifact>
+</component>
