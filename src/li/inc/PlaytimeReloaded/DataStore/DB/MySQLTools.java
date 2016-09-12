@@ -64,8 +64,6 @@ public class MySQLTools
 	{
 		pingConnection();
 
-		System.out.println(_quarry);
-
 		try
 		{
 			PreparedStatement _ps = m__MySQLConnection.prepareStatement(_quarry);
@@ -87,8 +85,6 @@ public class MySQLTools
 	public ResultSet saveMySQLQuarry(String _quarry, String[] _values)
 	{
 		pingConnection();
-
-		System.out.println(_quarry);
 
 		try
 		{
