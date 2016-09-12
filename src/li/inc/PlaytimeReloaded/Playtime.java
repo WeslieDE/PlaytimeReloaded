@@ -107,18 +107,25 @@ public class Playtime extends JavaPlugin implements Listener
         {
             event.getPlayer().sendMessage(getChatMessage(m_config.getTextYourCurrentPlaytime(), event.getPlayer().getName(), m_mysql.getPlayerTime(event.getPlayer().getUniqueId()), 0));
         }
+
+        addPlayTime(event.getPlayer().getUniqueId(), 0);
     }
 
     private void refreshPlaytime()
     {
         for(Player _dieserSpieler : getServer().getOnlinePlayers())
         {
-            int _spielerPlaytime = m_mysql.getPlayerTime(_dieserSpieler.getUniqueId());
-
-            _spielerPlaytime = _spielerPlaytime + 1;
-
-            m_mysql.update(_dieserSpieler.getUniqueId(), _spielerPlaytime);
+            addPlayTime(_dieserSpieler.getUniqueId(), 1);
         }
+    }
+
+    private void addPlayTime(UUID _playerUUID, int _time)
+    {
+        int _spielerPlaytime = m_mysql.getPlayerTime(_playerUUID);
+
+        _spielerPlaytime = _spielerPlaytime + _time;
+
+        m_mysql.update(_playerUUID, _spielerPlaytime);
     }
 
     private UUID getPlayerUUID(String _playerName)
