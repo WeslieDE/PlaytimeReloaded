@@ -1,6 +1,5 @@
 package li.inc.PlaytimeReloaded.DataStore;
 
-import org.bukkit.Material;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.Plugin;
 

@@ -13,16 +13,9 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.plugin.java.JavaPlugin;
-
-import java.awt.*;
-import java.text.SimpleDateFormat;
 import java.util.*;
-import java.util.List;
-import java.util.concurrent.TimeUnit;
 
-/**
- * Created by Christopher on 12.09.2016.
- */
+
 public class Playtime extends JavaPlugin implements Listener
 {
     private Config m_config;
