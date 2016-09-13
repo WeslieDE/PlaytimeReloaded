@@ -5,7 +5,7 @@ import java.sql.*;
 
 public class MySQLTools 
 {
-	Connection m__MySQLConnection;
+	Connection m_MySQLConnection;
 	
 	String m_host;
 	int m_port;
@@ -22,13 +22,13 @@ public class MySQLTools
 		m_dbname = _dbname;
 		m_username = _username;
 		m_passwort = _passwort;
-		
-		m__MySQLConnection = createSQLConnection(m_host, m_port, m_dbname, m_username, m_passwort);
+
+		m_MySQLConnection = createSQLConnection(m_host, m_port, m_dbname, m_username, m_passwort);
 	}
 	
 	public Connection getConnection()
 	{
-		return m__MySQLConnection;
+		return m_MySQLConnection;
 	}
 	
 	
@@ -51,9 +51,9 @@ public class MySQLTools
 	private void pingConnection()
 	{ 
 		try {
-			if(m__MySQLConnection.isClosed())
+			if(m_MySQLConnection.isClosed() || m_MySQLConnection.isValid(3))
 			{
-				m__MySQLConnection = createSQLConnection(m_host, m_port, m_dbname, m_username, m_passwort);
+				m_MySQLConnection = createSQLConnection(m_host, m_port, m_dbname, m_username, m_passwort);
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -66,7 +66,7 @@ public class MySQLTools
 
 		try
 		{
-			PreparedStatement _ps = m__MySQLConnection.prepareStatement(_quarry);
+			PreparedStatement _ps = m_MySQLConnection.prepareStatement(_quarry);
 			
 			int index = 0;
 			for( String _s: _values )
@@ -88,7 +88,7 @@ public class MySQLTools
 
 		try
 		{
-			PreparedStatement _ps = m__MySQLConnection.prepareStatement(_quarry);
+			PreparedStatement _ps = m_MySQLConnection.prepareStatement(_quarry);
 
 			int index = 0;
 			for( String _s: _values )
