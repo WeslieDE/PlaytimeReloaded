@@ -134,6 +134,10 @@ public class Playtime extends JavaPlugin implements Listener
 
     private UUID getPlayerUUID(String _playerName)
     {
+        Player _returnPlayer = Bukkit.getPlayerExact(_playerName);
+        if(_returnPlayer != null)
+            return _returnPlayer.getUniqueId();
+
         for(Player _dieserSpieler : getServer().getOnlinePlayers())
         {
             if(_dieserSpieler.getName() == _playerName)
