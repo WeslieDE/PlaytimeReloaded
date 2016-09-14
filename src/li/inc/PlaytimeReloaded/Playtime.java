@@ -58,9 +58,9 @@ public class Playtime extends JavaPlugin implements Listener
 
                     if(_player.hasPermission("playtime.use"))
                     {
-                        _player.sendMessage(getChatMessage(m_config.getTextYourCurrentPlaytime(), _player.getName(), m_mysql.getPlayerTime(_player.getUniqueId()), 0));
+                        _player.sendMessage(getChatMessage(m_config.getTextYourCurrentPlaytime(), _player.getName(), m_mysql.getPlayerTime(_player.getUniqueId()), 0, true));
                     }else{
-                        _player.sendMessage(getChatMessage(m_config.getTextNoPermission(), _player.getName(), 0, 0));
+                        _player.sendMessage(getChatMessage(m_config.getTextNoPermission(), _player.getName(), 0, 0, true));
                     }
                 }else{
                     this.getLogger().info("Ey you bread! You cant display the playtime from the console!");
@@ -77,21 +77,21 @@ public class Playtime extends JavaPlugin implements Listener
                         Player _player = (Player)sender;
                         if(_player.hasPermission("playtime.use.others"))
                         {
-                            _player.sendMessage(getChatMessage(m_config.getTextPlayerPlaytimeIs(), args[0], m_mysql.getPlayerTime(_searchPlayer), 0));
+                            _player.sendMessage(getChatMessage(m_config.getTextPlayerPlaytimeIs(), args[0], m_mysql.getPlayerTime(_searchPlayer), 0, true));
                         }else{
-                            _player.sendMessage(getChatMessage(m_config.getTextNoPermission(), args[0], 0, 0));
+                            _player.sendMessage(getChatMessage(m_config.getTextNoPermission(), args[0], 0, 0, true));
                         }
                     }else{
-                        this.getLogger().info(getChatMessage(m_config.getTextPlayerPlaytimeIs(), args[0], m_mysql.getPlayerTime(_searchPlayer), 0));
+                        this.getLogger().info(getChatMessage(m_config.getTextPlayerPlaytimeIs(), args[0], m_mysql.getPlayerTime(_searchPlayer), 0, false));
                     }
                 }else{
                     //Spieler wurde nicht gefunden / Hat noch nicht auf dem Server gespielt.
                     if (sender instanceof Player)
                     {
                         Player _player = (Player)sender;
-                        _player.sendMessage(getChatMessage(m_config.getTextPlayerNotFound(), "", 0, 0));
+                        _player.sendMessage(getChatMessage(m_config.getTextPlayerNotFound(), "", 0, 0, true));
                     }else{
-                        this.getLogger().info(getChatMessage(m_config.getTextPlayerNotFound(), "", 0, 0));
+                        this.getLogger().info(getChatMessage(m_config.getTextPlayerNotFound(), "", 0, 0, false));
                     }
                 }
             }
@@ -105,7 +105,7 @@ public class Playtime extends JavaPlugin implements Listener
     {
         if(event.getPlayer().hasPermission("playtime.use") && event.getPlayer().hasPermission("playtime.login"))
         {
-            event.getPlayer().sendMessage(getChatMessage(m_config.getTextYourCurrentPlaytime(), event.getPlayer().getName(), m_mysql.getPlayerTime(event.getPlayer().getUniqueId()), 0));
+            event.getPlayer().sendMessage(getChatMessage(m_config.getTextYourCurrentPlaytime(), event.getPlayer().getName(), m_mysql.getPlayerTime(event.getPlayer().getUniqueId()), 0, true));
         }
 
         UUIDCache.update(event.getPlayer().getName(), event.getPlayer().getUniqueId());
@@ -199,7 +199,7 @@ public class Playtime extends JavaPlugin implements Listener
         return _ausgabe;
     }
 
-    private String getChatMessage(String _plainText, String _player, int _time, int _rang)
+    private String getChatMessage(String _plainText, String _player, int _time, int _rang, boolean _color)
     {
         String returnText = m_config.getTextPrefix() + _plainText;
 
@@ -209,6 +209,10 @@ public class Playtime extends JavaPlugin implements Listener
         returnText = returnText.replace("%r", "" + _rang);
 
         returnText = ChatColor.translateAlternateColorCodes('&', returnText);
+
+        if(_color == false)
+            returnText = ChatColor.stripColor(returnText);
+
         return returnText;
     }
 }
