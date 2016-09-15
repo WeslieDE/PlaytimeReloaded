@@ -25,7 +25,6 @@ import com.earth2me.essentials.User;
 import li.inc.PlaytimeReloaded.DataStore.Config;
 import li.inc.PlaytimeReloaded.DataStore.DB.MySQL;
 import li.inc.PlaytimeReloaded.DataStore.UUIDCache;
-import li.inc.PlaytimeReloaded.DataStore.UUIDFetcher;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.OfflinePlayer;
