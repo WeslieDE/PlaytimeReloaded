@@ -51,8 +51,9 @@ public class MySQLTools
 	private void pingConnection()
 	{ 
 		try {
-			if(m_MySQLConnection.isClosed() || m_MySQLConnection.isValid(3))
+			if(m_MySQLConnection.isClosed() || !m_MySQLConnection.isValid(3))
 			{
+				m_MySQLConnection.close();
 				m_MySQLConnection = createSQLConnection(m_host, m_port, m_dbname, m_username, m_passwort);
 			}
 		} catch (SQLException e) {
