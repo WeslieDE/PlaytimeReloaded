@@ -135,10 +135,15 @@ public class Playtime extends JavaPlugin implements Listener
     {
         for(Player _dieserSpieler : getServer().getOnlinePlayers())
         {
-            User _userData = m_pluginEssentials.getUser(_dieserSpieler);
+            if(m_pluginEssentials != null)
+            {
+                User _userData = m_pluginEssentials.getUser(_dieserSpieler);
 
-            if(!_userData.isAfk())
+                if(!_userData.isAfk())
+                    addPlayTime(_dieserSpieler.getUniqueId(), 1);
+            }else{
                 addPlayTime(_dieserSpieler.getUniqueId(), 1);
+            }
         }
     }
 
