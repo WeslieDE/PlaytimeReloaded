@@ -42,7 +42,7 @@ public class MySQL
         try
         {
             m_MySqlTools = new MySQLTools(m_config.getMysqlHost(), m_config.getMysqlPort(), m_config.getMysqlDB(), m_config.getMysqlUsername(), m_config.getMysqlPassword());
-            m_MySqlTools.saveMySQLUpdate("CREATE TABLE IF NOT EXISTS Playtime(playeruuid varchar(36), playtime int(6), PRIMARY KEY (playeruuid))", new String[]{});
+            m_MySqlTools.saveMySQLUpdate("CREATE TABLE IF NOT EXISTS playtime(playeruuid varchar(36), playtime int(6), PRIMARY KEY (playeruuid))", new String[]{});
         }catch(Exception _e)
         {
             _plugin.getLogger().info("!!!!!!!!!!!! ERROR: CANT CONNECT TO MySQL Server !!!!!!!!!!!!");
@@ -51,7 +51,7 @@ public class MySQL
 
     public void update(UUID _playerUUID, int _newTime)
     {
-        m_MySqlTools.saveMySQLUpdate("REPLACE INTO `Playtime` (`playeruuid`, `playtime`) VALUES ('" + _playerUUID.toString() + "', '" + _newTime + "')", new String[]{});
+        m_MySqlTools.saveMySQLUpdate("REPLACE INTO playtime (`playeruuid`, `playtime`) VALUES ('" + _playerUUID.toString() + "', '" + _newTime + "')", new String[]{});
 
 
     }

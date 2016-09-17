@@ -7,7 +7,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2349fe23-928a-4003-8915-70ed3a9a49d9" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PlaytimeReloaded/li/inc/PlaytimeReloaded/DataStore/Config.class" afterPath="$PROJECT_DIR$/out/production/PlaytimeReloaded/li/inc/PlaytimeReloaded/DataStore/Config.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PlaytimeReloaded/li/inc/PlaytimeReloaded/DataStore/DB/MySQL.class" afterPath="$PROJECT_DIR$/out/production/PlaytimeReloaded/li/inc/PlaytimeReloaded/DataStore/DB/MySQL.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PlaytimeReloaded/li/inc/PlaytimeReloaded/DataStore/DB/MySQLTools.class" afterPath="$PROJECT_DIR$/out/production/PlaytimeReloaded/li/inc/PlaytimeReloaded/DataStore/DB/MySQLTools.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PlaytimeReloaded/li/inc/PlaytimeReloaded/DataStore/PlayerObject.class" afterPath="$PROJECT_DIR$/out/production/PlaytimeReloaded/li/inc/PlaytimeReloaded/DataStore/PlayerObject.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PlaytimeReloaded/li/inc/PlaytimeReloaded/DataStore/UUIDCache.class" afterPath="$PROJECT_DIR$/out/production/PlaytimeReloaded/li/inc/PlaytimeReloaded/DataStore/UUIDCache.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PlaytimeReloaded/li/inc/PlaytimeReloaded/DataStore/UUIDFetcher.class" afterPath="$PROJECT_DIR$/out/production/PlaytimeReloaded/li/inc/PlaytimeReloaded/DataStore/UUIDFetcher.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PlaytimeReloaded/li/inc/PlaytimeReloaded/Playtime$1.class" afterPath="$PROJECT_DIR$/out/production/PlaytimeReloaded/li/inc/PlaytimeReloaded/Playtime$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PlaytimeReloaded/li/inc/PlaytimeReloaded/Playtime.class" afterPath="$PROJECT_DIR$/out/production/PlaytimeReloaded/li/inc/PlaytimeReloaded/Playtime.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/DataStore/DB/MySQL.java" afterPath="$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/DataStore/DB/MySQL.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/Playtime.java" afterPath="$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/Playtime.java" />
     </list>
     <ignored path="PlaytimeReloaded.iws" />
@@ -32,10 +41,10 @@
       <file leaf-file-name="Playtime.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/Playtime.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="447">
-              <caret line="217" column="24" selection-start-line="217" selection-start-column="24" selection-end-line="217" selection-end-column="24" />
+            <state relative-caret-position="323">
+              <caret line="92" column="45" selection-start-line="92" selection-start-column="45" selection-end-line="92" selection-end-column="45" />
               <folding>
-                <element signature="e#0#8288#0" expanded="true" />
+                <element signature="e#0#8452#0" expanded="true" />
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
@@ -69,7 +78,6 @@
               <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1930#1944#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -100,10 +108,10 @@
       <file leaf-file-name="MySQL.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/DataStore/DB/MySQL.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-338">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state relative-caret-position="291">
+              <caret line="44" column="77" selection-start-line="44" selection-start-column="77" selection-end-line="44" selection-end-column="77" />
               <folding>
-                <element signature="e#0#2729#0" expanded="true" />
+                <element signature="e#0#2727#0" expanded="true" />
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
@@ -113,9 +121,11 @@
       <file leaf-file-name="MySQLTools.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/DataStore/DB/MySQLTools.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-              <folding />
+            <state relative-caret-position="665">
+              <caret line="120" column="16" selection-start-line="120" selection-start-column="16" selection-end-line="120" selection-end-column="16" />
+              <folding>
+                <element signature="e#0#3010#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -162,7 +172,6 @@
       <list>
         <option value="$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/Config.java" />
         <option value="$PROJECT_DIR$/plugin.yml" />
-        <option value="$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/DataStore/DB/MySQL.java" />
         <option value="$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/DataStore/DB/MySQLTools.java" />
         <option value="$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/DataStore/Config.java" />
         <option value="$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/DataStore/PlayerObject.java" />
@@ -170,6 +179,7 @@
         <option value="$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/DataStore/UUIDFetcher.java" />
         <option value="$PROJECT_DIR$/LICENSE.txt" />
         <option value="$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/Playtime.java" />
+        <option value="$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/DataStore/DB/MySQL.java" />
       </list>
     </option>
   </component>
@@ -205,8 +215,8 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -570,7 +580,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="22" width="1936" height="1066" extended-state="7" />
+    <frame x="-8" y="22" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -624,7 +634,99 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#8288#0" expanded="true" />
+            <element signature="e#0#8452#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/DataStore/PlayerObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/DataStore/UUIDCache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/DataStore/UUIDFetcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../spigot-1.10.2.jar!/org/bukkit/Bukkit.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1309">
+          <caret line="179" column="25" selection-start-line="179" selection-start-column="25" selection-end-line="179" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/DataStore/Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/DataStore/DB/MySQL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#2727#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/DataStore/DB/MySQLTools.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#3010#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LICENSE.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="68" selection-start-line="27" selection-start-column="68" selection-end-line="27" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugin.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/Playtime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#8452#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
@@ -652,7 +754,6 @@
           <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1930#1944#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -680,7 +781,7 @@
         <state relative-caret-position="136">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
-            <element signature="e#0#2729#0" expanded="true" />
+            <element signature="e#0#2727#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
@@ -690,7 +791,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="697">
           <caret line="44" column="26" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
-          <folding />
+          <folding>
+            <element signature="e#0#3010#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -719,14 +822,6 @@
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/../../Essentials.jar!/com/earth2me/essentials/Essentials.class" />
-    <entry file="file://$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/DataStore/DB/MySQLTools.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/DataStore/Config.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -759,7 +854,6 @@
           <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1930#1944#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -772,12 +866,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/DataStore/DB/MySQLTools.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="665">
+          <caret line="120" column="16" selection-start-line="120" selection-start-column="16" selection-end-line="120" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#3010#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/DataStore/DB/MySQL.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-338">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state relative-caret-position="291">
+          <caret line="44" column="77" selection-start-line="44" selection-start-column="77" selection-end-line="44" selection-end-column="77" />
           <folding>
-            <element signature="e#0#2729#0" expanded="true" />
+            <element signature="e#0#2727#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
@@ -785,10 +889,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/Playtime.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="217" column="24" selection-start-line="217" selection-start-column="24" selection-end-line="217" selection-end-column="24" />
+        <state relative-caret-position="323">
+          <caret line="92" column="45" selection-start-line="92" selection-start-column="45" selection-end-line="92" selection-end-column="45" />
           <folding>
-            <element signature="e#0#8288#0" expanded="true" />
+            <element signature="e#0#8452#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
