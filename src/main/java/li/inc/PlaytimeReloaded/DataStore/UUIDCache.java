@@ -21,6 +21,8 @@
 package li.inc.PlaytimeReloaded.DataStore;
 
 
+import org.bukkit.Bukkit;
+
 import java.util.*;
 
 public class UUIDCache
@@ -64,5 +66,21 @@ public class UUIDCache
             update(_playerName, null);
             return null;
         }
+    }
+
+    public static String get(UUID _playerUUID)
+    {
+        for (PlayerObject _dieserPlayer : m_players)
+        {
+            if(_dieserPlayer.getUUID() == _playerUUID)
+            {
+                return _dieserPlayer.getName();
+            }
+        }
+
+        String _playerName = Bukkit.getPlayer(_playerUUID).getName();
+        update(_playerName, _playerUUID);
+
+        return _playerName;
     }
 }

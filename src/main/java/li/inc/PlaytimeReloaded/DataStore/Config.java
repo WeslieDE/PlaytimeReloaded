@@ -173,7 +173,7 @@ public class Config
         m_textTopPlayerListHead = _config.getString("text.TopPlayerTitel");
         m_textPlayerEntry = _config.getString("text.TopPlayerEntry");
 
-        for (String _l: (List<String>)_config.getList("timeCommand"))
+        for (String _l: _config.getStringList("timeCommand"))
         {
             String[] _ld = _l.split(";");
 
@@ -206,7 +206,13 @@ public class Config
         _config.set("text.TopPlayerTitel", m_textTopPlayerListHead);
         _config.set("text.TopPlayerEntry", m_textPlayerEntry);
 
-        _config.set("timeCommand", m_timeCommands);
+        List<String> _timeCommands = new ArrayList<String>();
+        for (TimeCommand _tc: m_timeCommands)
+        {
+            _timeCommands.add(_tc.getTime() + ";" + _tc.getCommand());
+        }
+
+        _config.set("timeCommand", _timeCommands);
 
 		m_plugin.saveConfig();
 	}
