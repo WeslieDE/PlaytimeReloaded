@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/PlaytimeReloaded.iml" filepath="$PROJECT_DIR$/PlaytimeReloaded.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PlaytimeReloaded.iml" filepath="$PROJECT_DIR$/.idea/modules/PlaytimeReloaded.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PlaytimeReloaded_main.iml" filepath="$PROJECT_DIR$/.idea/modules/PlaytimeReloaded_main.iml" group="PlaytimeReloaded" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PlaytimeReloaded_test.iml" filepath="$PROJECT_DIR$/.idea/modules/PlaytimeReloaded_test.iml" group="PlaytimeReloaded" />
     </modules>
   </component>
 </project>
