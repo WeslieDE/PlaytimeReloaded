@@ -26,6 +26,7 @@ import li.inc.PlaytimeReloaded.DataStore.Config;
 import li.inc.PlaytimeReloaded.DataStore.DB.MySQL;
 import li.inc.PlaytimeReloaded.DataStore.TimeCommand;
 import li.inc.PlaytimeReloaded.DataStore.UUIDCache;
+import li.inc.PlaytimeReloaded.DataStore.UUIDFetcher;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.OfflinePlayer;
@@ -251,7 +252,12 @@ public class Playtime extends JavaPlugin implements Listener
         {
             if(_tc.getTime() == _time)
             {
-                Bukkit.dispatchCommand(Bukkit.getConsoleSender(), _tc.getCommand());
+                String _commandWithParas = _tc.getCommand();
+
+                _commandWithParas = _commandWithParas.replace("%%player%%", UUIDCache.get(_player));
+                _commandWithParas = _commandWithParas.replace("%%time%%", "" + _time);
+
+                Bukkit.dispatchCommand(Bukkit.getConsoleSender(), _commandWithParas);
             }
         }
     }
