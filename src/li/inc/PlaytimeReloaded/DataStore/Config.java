@@ -212,7 +212,7 @@ public class Config
             _timeCommands.add(_tc.getTime() + ";" + _tc.getCommand());
         }
 
-        _config.setList("timeCommand", _timeCommands);
+        _config.set("timeCommand", _timeCommands);
 
 		m_plugin.saveConfig();
 	}
