@@ -257,6 +257,8 @@ public class Playtime extends JavaPlugin implements Listener
                 _commandWithParas = _commandWithParas.replace("%%player%%", UUIDCache.get(_player));
                 _commandWithParas = _commandWithParas.replace("%%time%%", "" + _time);
 
+                _commandWithParas = ChatColor.translateAlternateColorCodes('&', _commandWithParas);
+
                 Bukkit.dispatchCommand(Bukkit.getConsoleSender(), _commandWithParas);
             }
         }
