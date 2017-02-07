@@ -21,6 +21,15 @@ repositories {
     maven {
         url "http://repo.ess3.net/content/groups/essentials"
     }
+    maven {
+        url = "https://oss.sonatype.org/content/repositories/snapshots/"
+    }
+    maven {
+        url = "http://nexus.hc.to/content/repositories/pub_releases"
+    }
+    maven {
+        url = "http://maven.elmakers.com/repository/"
+    }
     flatDir {
         dir 'lib'
     }
