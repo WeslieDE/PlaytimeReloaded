@@ -7,17 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2349fe23-928a-4003-8915-70ed3a9a49d9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PlaytimeReloaded/li/inc/PlaytimeReloaded/DataStore/Config.class" afterPath="$PROJECT_DIR$/out/production/PlaytimeReloaded/li/inc/PlaytimeReloaded/DataStore/Config.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PlaytimeReloaded/li/inc/PlaytimeReloaded/DataStore/DB/MySQL.class" afterPath="$PROJECT_DIR$/out/production/PlaytimeReloaded/li/inc/PlaytimeReloaded/DataStore/DB/MySQL.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PlaytimeReloaded/li/inc/PlaytimeReloaded/DataStore/DB/MySQLTools.class" afterPath="$PROJECT_DIR$/out/production/PlaytimeReloaded/li/inc/PlaytimeReloaded/DataStore/DB/MySQLTools.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PlaytimeReloaded/li/inc/PlaytimeReloaded/DataStore/PlayerObject.class" afterPath="$PROJECT_DIR$/out/production/PlaytimeReloaded/li/inc/PlaytimeReloaded/DataStore/PlayerObject.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PlaytimeReloaded/li/inc/PlaytimeReloaded/DataStore/UUIDCache.class" afterPath="$PROJECT_DIR$/out/production/PlaytimeReloaded/li/inc/PlaytimeReloaded/DataStore/UUIDCache.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PlaytimeReloaded/li/inc/PlaytimeReloaded/DataStore/UUIDFetcher.class" afterPath="$PROJECT_DIR$/out/production/PlaytimeReloaded/li/inc/PlaytimeReloaded/DataStore/UUIDFetcher.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PlaytimeReloaded/li/inc/PlaytimeReloaded/Playtime$1.class" afterPath="$PROJECT_DIR$/out/production/PlaytimeReloaded/li/inc/PlaytimeReloaded/Playtime$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PlaytimeReloaded/li/inc/PlaytimeReloaded/Playtime.class" afterPath="$PROJECT_DIR$/out/production/PlaytimeReloaded/li/inc/PlaytimeReloaded/Playtime.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/spigot_1_10_2.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Essentials_2_x_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Essentials_2_x_SNAPSHOT.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/DataStore/DB/MySQL.java" afterPath="$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/DataStore/DB/MySQL.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/Playtime.java" afterPath="$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/Playtime.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PlaytimeReloaded.iml" afterPath="$PROJECT_DIR$/PlaytimeReloaded.iml" />
     </list>
     <ignored path="PlaytimeReloaded.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,11 +35,11 @@
       <file leaf-file-name="Playtime.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/Playtime.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="92" column="45" selection-start-line="92" selection-start-column="45" selection-end-line="92" selection-end-column="45" />
+            <state relative-caret-position="264">
+              <caret line="212" column="0" selection-start-line="212" selection-start-column="0" selection-end-line="212" selection-end-column="0" />
               <folding>
-                <element signature="e#0#8452#0" expanded="true" />
-                <element signature="imports" expanded="true" />
+                <element signature="e#2173#2174#0" expanded="false" />
+                <element signature="e#2222#2223#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -56,7 +50,12 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
               <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-              <folding />
+              <folding>
+                <element signature="e#1160#1161#0" expanded="false" />
+                <element signature="e#1195#1196#0" expanded="false" />
+                <element signature="e#1230#1231#0" expanded="false" />
+                <element signature="e#1265#1266#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -77,18 +76,9 @@
             <state relative-caret-position="289">
               <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#1792#1793#0" expanded="false" />
+                <element signature="e#1825#1826#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Bukkit.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/../../spigot-1.10.2.jar!/org/bukkit/Bukkit.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1309">
-              <caret line="179" column="25" selection-start-line="179" selection-start-column="25" selection-end-line="179" selection-end-column="25" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -99,7 +89,36 @@
             <state relative-caret-position="289">
               <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#1057#1058#0" expanded="false" />
+                <element signature="e#1082#1083#0" expanded="false" />
+                <element signature="e#1146#1147#0" expanded="false" />
+                <element signature="e#1171#1172#0" expanded="false" />
+                <element signature="e#1235#1236#0" expanded="false" />
+                <element signature="e#1258#1259#0" expanded="false" />
+                <element signature="e#1338#1339#0" expanded="false" />
+                <element signature="e#1367#1368#0" expanded="false" />
+                <element signature="e#1451#1452#0" expanded="false" />
+                <element signature="e#1480#1481#0" expanded="false" />
+                <element signature="e#1587#1588#0" expanded="false" />
+                <element signature="e#1622#1623#0" expanded="false" />
+                <element signature="e#1747#1748#0" expanded="false" />
+                <element signature="e#1786#1787#0" expanded="false" />
+                <element signature="e#1924#1925#0" expanded="false" />
+                <element signature="e#1969#1970#0" expanded="false" />
+                <element signature="e#2108#2109#0" expanded="false" />
+                <element signature="e#2151#2152#0" expanded="false" />
+                <element signature="e#2273#2274#0" expanded="false" />
+                <element signature="e#2310#2311#0" expanded="false" />
+                <element signature="e#2402#2403#0" expanded="false" />
+                <element signature="e#2433#2434#0" expanded="false" />
+                <element signature="e#2562#2563#0" expanded="false" />
+                <element signature="e#2603#2604#0" expanded="false" />
+                <element signature="e#2694#2695#0" expanded="false" />
+                <element signature="e#2731#2732#0" expanded="false" />
+                <element signature="e#2825#2826#0" expanded="false" />
+                <element signature="e#2863#2864#0" expanded="false" />
+                <element signature="e#2963#2964#0" expanded="false" />
+                <element signature="e#3003#3004#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -108,12 +127,9 @@
       <file leaf-file-name="MySQL.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/DataStore/DB/MySQL.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
+            <state relative-caret-position="357">
               <caret line="44" column="77" selection-start-line="44" selection-start-column="77" selection-end-line="44" selection-end-column="77" />
-              <folding>
-                <element signature="e#0#2727#0" expanded="true" />
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -121,10 +137,11 @@
       <file leaf-file-name="MySQLTools.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/DataStore/DB/MySQLTools.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="665">
+            <state relative-caret-position="1683">
               <caret line="120" column="16" selection-start-line="120" selection-start-column="16" selection-end-line="120" selection-end-column="16" />
               <folding>
-                <element signature="e#0#3010#0" expanded="true" />
+                <element signature="e#1401#1402#0" expanded="false" />
+                <element signature="e#1432#1433#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -214,9 +231,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -303,10 +319,11 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Essentials-2.x-SNAPSHOT.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Essentials-2.x-SNAPSHOT.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -580,12 +597,11 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="22" width="1936" height="1066" extended-state="6" />
+    <frame x="-8" y="22" width="1936" height="1066" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291536" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -595,13 +611,14 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16666667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291536" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -634,8 +651,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#8452#0" expanded="true" />
-            <element signature="imports" expanded="true" />
+            <element signature="e#2173#2174#0" expanded="false" />
+            <element signature="e#2222#2223#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -644,7 +661,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-          <folding />
+          <folding>
+            <element signature="e#1160#1161#0" expanded="false" />
+            <element signature="e#1195#1196#0" expanded="false" />
+            <element signature="e#1230#1231#0" expanded="false" />
+            <element signature="e#1265#1266#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -661,16 +683,9 @@
         <state relative-caret-position="289">
           <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1792#1793#0" expanded="false" />
+            <element signature="e#1825#1826#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../spigot-1.10.2.jar!/org/bukkit/Bukkit.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1309">
-          <caret line="179" column="25" selection-start-line="179" selection-start-column="25" selection-end-line="179" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -679,28 +694,55 @@
         <state relative-caret-position="289">
           <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1057#1058#0" expanded="false" />
+            <element signature="e#1082#1083#0" expanded="false" />
+            <element signature="e#1146#1147#0" expanded="false" />
+            <element signature="e#1171#1172#0" expanded="false" />
+            <element signature="e#1235#1236#0" expanded="false" />
+            <element signature="e#1258#1259#0" expanded="false" />
+            <element signature="e#1338#1339#0" expanded="false" />
+            <element signature="e#1367#1368#0" expanded="false" />
+            <element signature="e#1451#1452#0" expanded="false" />
+            <element signature="e#1480#1481#0" expanded="false" />
+            <element signature="e#1587#1588#0" expanded="false" />
+            <element signature="e#1622#1623#0" expanded="false" />
+            <element signature="e#1747#1748#0" expanded="false" />
+            <element signature="e#1786#1787#0" expanded="false" />
+            <element signature="e#1924#1925#0" expanded="false" />
+            <element signature="e#1969#1970#0" expanded="false" />
+            <element signature="e#2108#2109#0" expanded="false" />
+            <element signature="e#2151#2152#0" expanded="false" />
+            <element signature="e#2273#2274#0" expanded="false" />
+            <element signature="e#2310#2311#0" expanded="false" />
+            <element signature="e#2402#2403#0" expanded="false" />
+            <element signature="e#2433#2434#0" expanded="false" />
+            <element signature="e#2562#2563#0" expanded="false" />
+            <element signature="e#2603#2604#0" expanded="false" />
+            <element signature="e#2694#2695#0" expanded="false" />
+            <element signature="e#2731#2732#0" expanded="false" />
+            <element signature="e#2825#2826#0" expanded="false" />
+            <element signature="e#2863#2864#0" expanded="false" />
+            <element signature="e#2963#2964#0" expanded="false" />
+            <element signature="e#3003#3004#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/DataStore/DB/MySQL.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#2727#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="357">
+          <caret line="44" column="77" selection-start-line="44" selection-start-column="77" selection-end-line="44" selection-end-column="77" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/DataStore/DB/MySQLTools.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+        <state relative-caret-position="1683">
+          <caret line="120" column="16" selection-start-line="120" selection-start-column="16" selection-end-line="120" selection-end-column="16" />
           <folding>
-            <element signature="e#0#3010#0" expanded="true" />
+            <element signature="e#1401#1402#0" expanded="false" />
+            <element signature="e#1432#1433#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -726,8 +768,126 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#8452#0" expanded="true" />
-            <element signature="imports" expanded="true" />
+            <element signature="e#2173#2174#0" expanded="false" />
+            <element signature="e#2222#2223#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/DataStore/PlayerObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+          <folding>
+            <element signature="e#1160#1161#0" expanded="false" />
+            <element signature="e#1195#1196#0" expanded="false" />
+            <element signature="e#1230#1231#0" expanded="false" />
+            <element signature="e#1265#1266#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/DataStore/UUIDCache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/DataStore/UUIDFetcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+          <folding>
+            <element signature="e#1792#1793#0" expanded="false" />
+            <element signature="e#1825#1826#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../spigot-1.10.2.jar!/org/bukkit/Bukkit.class" />
+    <entry file="file://$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/DataStore/Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+          <folding>
+            <element signature="e#1057#1058#0" expanded="false" />
+            <element signature="e#1082#1083#0" expanded="false" />
+            <element signature="e#1146#1147#0" expanded="false" />
+            <element signature="e#1171#1172#0" expanded="false" />
+            <element signature="e#1235#1236#0" expanded="false" />
+            <element signature="e#1258#1259#0" expanded="false" />
+            <element signature="e#1338#1339#0" expanded="false" />
+            <element signature="e#1367#1368#0" expanded="false" />
+            <element signature="e#1451#1452#0" expanded="false" />
+            <element signature="e#1480#1481#0" expanded="false" />
+            <element signature="e#1587#1588#0" expanded="false" />
+            <element signature="e#1622#1623#0" expanded="false" />
+            <element signature="e#1747#1748#0" expanded="false" />
+            <element signature="e#1786#1787#0" expanded="false" />
+            <element signature="e#1924#1925#0" expanded="false" />
+            <element signature="e#1969#1970#0" expanded="false" />
+            <element signature="e#2108#2109#0" expanded="false" />
+            <element signature="e#2151#2152#0" expanded="false" />
+            <element signature="e#2273#2274#0" expanded="false" />
+            <element signature="e#2310#2311#0" expanded="false" />
+            <element signature="e#2402#2403#0" expanded="false" />
+            <element signature="e#2433#2434#0" expanded="false" />
+            <element signature="e#2562#2563#0" expanded="false" />
+            <element signature="e#2603#2604#0" expanded="false" />
+            <element signature="e#2694#2695#0" expanded="false" />
+            <element signature="e#2731#2732#0" expanded="false" />
+            <element signature="e#2825#2826#0" expanded="false" />
+            <element signature="e#2863#2864#0" expanded="false" />
+            <element signature="e#2963#2964#0" expanded="false" />
+            <element signature="e#3003#3004#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/DataStore/DB/MySQL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/DataStore/DB/MySQLTools.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+          <folding>
+            <element signature="e#1401#1402#0" expanded="false" />
+            <element signature="e#1432#1433#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LICENSE.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="68" selection-start-line="27" selection-start-column="68" selection-end-line="27" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugin.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/Playtime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#2173#2174#0" expanded="false" />
+            <element signature="e#2222#2223#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -736,7 +896,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
-          <folding />
+          <folding>
+            <element signature="e#1160#1161#0" expanded="false" />
+            <element signature="e#1195#1196#0" expanded="false" />
+            <element signature="e#1230#1231#0" expanded="false" />
+            <element signature="e#1265#1266#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -753,25 +918,48 @@
         <state relative-caret-position="612">
           <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1792#1793#0" expanded="false" />
+            <element signature="e#1825#1826#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../spigot-1.10.2.jar!/org/bukkit/Bukkit.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1309">
-          <caret line="179" column="25" selection-start-line="179" selection-start-column="25" selection-end-line="179" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../spigot-1.10.2.jar!/org/bukkit/Bukkit.class" />
     <entry file="file://$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/DataStore/Config.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1057#1058#0" expanded="false" />
+            <element signature="e#1082#1083#0" expanded="false" />
+            <element signature="e#1146#1147#0" expanded="false" />
+            <element signature="e#1171#1172#0" expanded="false" />
+            <element signature="e#1235#1236#0" expanded="false" />
+            <element signature="e#1258#1259#0" expanded="false" />
+            <element signature="e#1338#1339#0" expanded="false" />
+            <element signature="e#1367#1368#0" expanded="false" />
+            <element signature="e#1451#1452#0" expanded="false" />
+            <element signature="e#1480#1481#0" expanded="false" />
+            <element signature="e#1587#1588#0" expanded="false" />
+            <element signature="e#1622#1623#0" expanded="false" />
+            <element signature="e#1747#1748#0" expanded="false" />
+            <element signature="e#1786#1787#0" expanded="false" />
+            <element signature="e#1924#1925#0" expanded="false" />
+            <element signature="e#1969#1970#0" expanded="false" />
+            <element signature="e#2108#2109#0" expanded="false" />
+            <element signature="e#2151#2152#0" expanded="false" />
+            <element signature="e#2273#2274#0" expanded="false" />
+            <element signature="e#2310#2311#0" expanded="false" />
+            <element signature="e#2402#2403#0" expanded="false" />
+            <element signature="e#2433#2434#0" expanded="false" />
+            <element signature="e#2562#2563#0" expanded="false" />
+            <element signature="e#2603#2604#0" expanded="false" />
+            <element signature="e#2694#2695#0" expanded="false" />
+            <element signature="e#2731#2732#0" expanded="false" />
+            <element signature="e#2825#2826#0" expanded="false" />
+            <element signature="e#2863#2864#0" expanded="false" />
+            <element signature="e#2963#2964#0" expanded="false" />
+            <element signature="e#3003#3004#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -780,10 +968,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#2727#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -792,7 +977,8 @@
         <state relative-caret-position="697">
           <caret line="44" column="26" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
           <folding>
-            <element signature="e#0#3010#0" expanded="true" />
+            <element signature="e#1401#1402#0" expanded="false" />
+            <element signature="e#1432#1433#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -813,21 +999,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../spigot-1.10.2.jar!/org/bukkit/Bukkit.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1309">
-          <caret line="179" column="25" selection-start-line="179" selection-start-column="25" selection-end-line="179" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../spigot-1.10.2.jar!/org/bukkit/Bukkit.class" />
     <entry file="jar://$PROJECT_DIR$/../../Essentials.jar!/com/earth2me/essentials/Essentials.class" />
     <entry file="file://$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/DataStore/Config.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1057#1058#0" expanded="false" />
+            <element signature="e#1082#1083#0" expanded="false" />
+            <element signature="e#1146#1147#0" expanded="false" />
+            <element signature="e#1171#1172#0" expanded="false" />
+            <element signature="e#1235#1236#0" expanded="false" />
+            <element signature="e#1258#1259#0" expanded="false" />
+            <element signature="e#1338#1339#0" expanded="false" />
+            <element signature="e#1367#1368#0" expanded="false" />
+            <element signature="e#1451#1452#0" expanded="false" />
+            <element signature="e#1480#1481#0" expanded="false" />
+            <element signature="e#1587#1588#0" expanded="false" />
+            <element signature="e#1622#1623#0" expanded="false" />
+            <element signature="e#1747#1748#0" expanded="false" />
+            <element signature="e#1786#1787#0" expanded="false" />
+            <element signature="e#1924#1925#0" expanded="false" />
+            <element signature="e#1969#1970#0" expanded="false" />
+            <element signature="e#2108#2109#0" expanded="false" />
+            <element signature="e#2151#2152#0" expanded="false" />
+            <element signature="e#2273#2274#0" expanded="false" />
+            <element signature="e#2310#2311#0" expanded="false" />
+            <element signature="e#2402#2403#0" expanded="false" />
+            <element signature="e#2433#2434#0" expanded="false" />
+            <element signature="e#2562#2563#0" expanded="false" />
+            <element signature="e#2603#2604#0" expanded="false" />
+            <element signature="e#2694#2695#0" expanded="false" />
+            <element signature="e#2731#2732#0" expanded="false" />
+            <element signature="e#2825#2826#0" expanded="false" />
+            <element signature="e#2863#2864#0" expanded="false" />
+            <element signature="e#2963#2964#0" expanded="false" />
+            <element signature="e#3003#3004#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -836,7 +1044,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-          <folding />
+          <folding>
+            <element signature="e#1160#1161#0" expanded="false" />
+            <element signature="e#1195#1196#0" expanded="false" />
+            <element signature="e#1230#1231#0" expanded="false" />
+            <element signature="e#1265#1266#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -853,7 +1066,8 @@
         <state relative-caret-position="289">
           <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1792#1793#0" expanded="false" />
+            <element signature="e#1825#1826#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -868,32 +1082,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/DataStore/DB/MySQLTools.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="665">
+        <state relative-caret-position="1683">
           <caret line="120" column="16" selection-start-line="120" selection-start-column="16" selection-end-line="120" selection-end-column="16" />
           <folding>
-            <element signature="e#0#3010#0" expanded="true" />
+            <element signature="e#1401#1402#0" expanded="false" />
+            <element signature="e#1432#1433#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/DataStore/DB/MySQL.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
+        <state relative-caret-position="357">
           <caret line="44" column="77" selection-start-line="44" selection-start-column="77" selection-end-line="44" selection-end-column="77" />
-          <folding>
-            <element signature="e#0#2727#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/li/inc/PlaytimeReloaded/Playtime.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="92" column="45" selection-start-line="92" selection-start-column="45" selection-end-line="92" selection-end-column="45" />
+        <state relative-caret-position="264">
+          <caret line="212" column="0" selection-start-line="212" selection-start-column="0" selection-end-line="212" selection-end-column="0" />
           <folding>
-            <element signature="e#0#8452#0" expanded="true" />
-            <element signature="imports" expanded="true" />
+            <element signature="e#2173#2174#0" expanded="false" />
+            <element signature="e#2222#2223#0" expanded="false" />
           </folding>
         </state>
       </provider>
