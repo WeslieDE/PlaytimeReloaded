@@ -24,6 +24,7 @@ import com.earth2me.essentials.Essentials;
 import com.earth2me.essentials.User;
 import li.inc.PlaytimeReloaded.DataStore.Config;
 import li.inc.PlaytimeReloaded.DataStore.DB.MySQL;
+import li.inc.PlaytimeReloaded.DataStore.TimeCommand;
 import li.inc.PlaytimeReloaded.DataStore.UUIDCache;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -154,6 +155,8 @@ public class Playtime extends JavaPlugin implements Listener
         _spielerPlaytime = _spielerPlaytime + _time;
 
         m_mysql.update(_playerUUID, _spielerPlaytime);
+
+        checkPlaytimeCommand(_playerUUID, _spielerPlaytime);
     }
 
     private UUID getPlayerUUID(String _playerName)
@@ -238,5 +241,18 @@ public class Playtime extends JavaPlugin implements Listener
             returnText = ChatColor.stripColor(returnText);
 
         return returnText;
+    }
+
+    private void checkPlaytimeCommand(UUID _player, int _time)
+    {
+        List<TimeCommand> _timeCommands = m_config.getTimeCommandList();
+
+        for (TimeCommand _tc: _timeCommands)
+        {
+            if(_tc.getTime() == _time)
+            {
+                Bukkit.dispatchCommand(Bukkit.getConsoleSender(), _tc.getCommand());
+            }
+        }
     }
 }
