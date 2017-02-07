@@ -23,6 +23,9 @@ package li.inc.PlaytimeReloaded.DataStore;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.Plugin;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Config 
 {
 	//MySQL
@@ -117,6 +120,12 @@ public class Config
         return m_textDateMinutes;
     }
 
+    private List<TimeCommand> m_timeCommands = new ArrayList<TimeCommand>();
+    public List<TimeCommand> getTimeCommandList()
+    {
+        return m_timeCommands;
+    }
+
 	private void setDefaultConfigValues(FileConfiguration _config)
 	{
 		_config.addDefault("mysql.host", m_MySqlHost);
@@ -138,6 +147,8 @@ public class Config
 
         _config.addDefault("text.TopPlayerTitel", m_textTopPlayerListHead);
         _config.addDefault("text.TopPlayerEntry", m_textPlayerEntry);
+
+        _config.addDefault("timeCommand", m_timeCommands);
 	}
 	
 	private void getConfigValues(FileConfiguration _config)
@@ -161,6 +172,16 @@ public class Config
 
         m_textTopPlayerListHead = _config.getString("text.TopPlayerTitel");
         m_textPlayerEntry = _config.getString("text.TopPlayerEntry");
+
+        for (String _l: (List<String>)_config.getList("timeCommand"))
+        {
+            String[] _ld = _l.split(";");
+
+            if(_ld.length == 2)
+            {
+                m_timeCommands.add(new TimeCommand(Integer.parseInt(_ld[0]), _ld[1]));
+            }
+        }
 	}
 	
 	private void saveConfigValues(FileConfiguration _config)
@@ -184,6 +205,8 @@ public class Config
 
         _config.set("text.TopPlayerTitel", m_textTopPlayerListHead);
         _config.set("text.TopPlayerEntry", m_textPlayerEntry);
+
+        _config.set("timeCommand", m_timeCommands);
 
 		m_plugin.saveConfig();
 	}
