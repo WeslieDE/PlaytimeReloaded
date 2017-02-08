@@ -21,6 +21,7 @@
 package li.inc.PlaytimeReloaded.DataStore.DB;
 
 import li.inc.PlaytimeReloaded.DataStore.Config;
+import li.inc.PlaytimeReloaded.DataStore.UUIDCache;
 import org.bukkit.plugin.Plugin;
 
 import java.sql.ResultSet;
@@ -69,7 +70,7 @@ public class MySQL
                 {
                     try
                     {
-                        _returnList.add(new String[]{_rs.getString("playeruuid"), _rs.getString("playtime")});
+                        _returnList.add(new String[]{UUIDCache.get(UUID.fromString(_rs.getString("playeruuid"))), _rs.getString("playtime")});
                     }catch(Exception _e)
                     {
                         return new ArrayList<String[]>();
