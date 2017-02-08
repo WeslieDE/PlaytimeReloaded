@@ -263,4 +263,19 @@ public class Playtime extends JavaPlugin implements Listener
             }
         }
     }
+
+    private String getTopPlayTime(String _format, Boolean _color)
+    {
+        String _returnValue = "";
+
+        List<String[]> _topPlayers = m_mysql.getTopPlayers();
+
+        for (String[] _playerData: _topPlayers)
+        {
+            if(_playerData.length >= 2)
+            {
+                _returnValue += getChatMessage(_format, UUIDCache.get(_playerData[0]), Integer.parseInt(_playerData[1]), 0, _color);
+            }
+        }
+    }
 }
