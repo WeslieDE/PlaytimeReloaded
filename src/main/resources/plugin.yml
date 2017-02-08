@@ -6,3 +6,6 @@ commands:
    playtime:
       description: Shows your playtime
       usage: /playtime
+   toptime:
+      description: Show top playtime
+      usage: /toptime
