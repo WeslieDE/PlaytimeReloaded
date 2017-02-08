@@ -67,7 +67,24 @@ public class Playtime extends JavaPlugin implements Listener
             }}, 0, 1200);
     }
 
-    public boolean onCommand(CommandSender sender, Command cmd, String commandLabel, String[] args) {
+    public boolean onCommand(CommandSender sender, Command cmd, String commandLabel, String[] args)
+    {
+        if (cmd.getName().equalsIgnoreCase("toptime"))
+        {
+            if (sender instanceof Player)
+            {
+                if(_player.hasPermission("playtime.top"))
+                {
+                    _player.sendMessage(getChatMessage(m_config.getTextTopPlayerListHead(), _player.getName(), 0, 0, true));
+                    _player.sendMessage(getChatMessage(getTopPlayTime(m_config.getTextPlayerEntry(), true), _player.getName(), 0, 0, true));
+                }else{
+                    _player.sendMessage(getChatMessage(m_config.getTextNoPermission(), _player.getName(), 0, 0, true));
+                }
+            }else{
+                this.getLogger().info(getChatMessage(getTopPlayTime(m_config.getTextPlayerEntry(), false), "", 0, 0, true));
+            }
+        }
+
         if (cmd.getName().equalsIgnoreCase("playtime"))
         {
             if(args.length == 0)
