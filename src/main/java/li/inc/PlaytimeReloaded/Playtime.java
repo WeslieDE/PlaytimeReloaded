@@ -80,12 +80,12 @@ public class Playtime extends JavaPlugin implements Listener
                     _player.sendMessage(getChatMessage(m_config.getTextTopPlayerListHead(), _player.getName(), 0, 0, true));
 
                     List<String[]> _topPlayers = m_mysql.getTopPlayers();
-
+                    int _rang = 1;
                     for (String[] _playerData: _topPlayers)
                     {
                         if(_playerData.length >= 2)
                         {
-                            _player.sendMessage(getChatMessage(m_config.getTextPlayerEntry(), _playerData[0], Integer.parseInt(_playerData[1]), 0, true));
+                            _player.sendMessage(getChatMessage(m_config.getTextPlayerEntry(), _playerData[0], Integer.parseInt(_playerData[1]), _rang++, true));
                         }
                     }
                 }else{
