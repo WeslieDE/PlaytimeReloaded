@@ -7,7 +7,7 @@ Its need a mysql db to save all player data. Supports color codes in every messa
 - /playtime [player]
     Show you own playtime or the playtime from [player]
 
-- /playtop
+- /toptime
     Show the top 5 player with the best playtime.
 
 ## Permissions
@@ -20,6 +20,9 @@ The player can use the /playtime command.
 
 - playtime.use.others
 The player can see the playtime from other players.
+
+- playtime.top
+Can see the top 5 playtime list.
 
 ## Config
 
