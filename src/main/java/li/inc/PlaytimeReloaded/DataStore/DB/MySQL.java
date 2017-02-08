@@ -25,6 +25,8 @@ import org.bukkit.plugin.Plugin;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.UUID;
 
 public class MySQL
@@ -52,8 +54,33 @@ public class MySQL
     public void update(UUID _playerUUID, int _newTime)
     {
         m_MySqlTools.saveMySQLUpdate("REPLACE INTO playtime (`playeruuid`, `playtime`) VALUES ('" + _playerUUID.toString() + "', '" + _newTime + "')", new String[]{});
+    }
 
+    public List<String[]> getTopPlayers()
+    {
+        ResultSet _rs = m_MySqlTools.saveMySQLQuarry("SELECT * FROM playtime ORDER BY playtime DESC LIMIT 5", new String[]{});
+        List<String[]> _returnList = new ArrayList<String[]>();
 
+        if(_rs != null)
+        {
+            try
+            {
+                while(_rs.next())
+                {
+                    try
+                    {
+                        _returnList.add(new String[]{_rs.getString("playeruuid"), _rs.getString("playtime")});
+                    }catch(Exception _e)
+                    {
+                        return new ArrayList<String[]>();
+                    }
+                }
+            } catch (SQLException e) {
+                return new ArrayList<String[]>();
+            }
+        }
+
+        return _returnList;
     }
 
     public int getPlayerTime(UUID _playerUUID)
