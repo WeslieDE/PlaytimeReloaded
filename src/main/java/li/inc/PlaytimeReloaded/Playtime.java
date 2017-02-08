@@ -73,15 +73,26 @@ public class Playtime extends JavaPlugin implements Listener
         {
             if (sender instanceof Player)
             {
+                Player _player = (Player)sender;
+
                 if(_player.hasPermission("playtime.top"))
                 {
                     _player.sendMessage(getChatMessage(m_config.getTextTopPlayerListHead(), _player.getName(), 0, 0, true));
-                    _player.sendMessage(getChatMessage(getTopPlayTime(m_config.getTextPlayerEntry(), true), _player.getName(), 0, 0, true));
+
+                    List<String[]> _topPlayers = m_mysql.getTopPlayers();
+
+                    for (String[] _playerData: _topPlayers)
+                    {
+                        if(_playerData.length >= 2)
+                        {
+                            _player.sendMessage(getChatMessage(m_config.getTextPlayerEntry(), _playerData[0], Integer.parseInt(_playerData[1]), 0, true));
+                        }
+                    }
                 }else{
                     _player.sendMessage(getChatMessage(m_config.getTextNoPermission(), _player.getName(), 0, 0, true));
                 }
             }else{
-                this.getLogger().info(getChatMessage(getTopPlayTime(m_config.getTextPlayerEntry(), false), "", 0, 0, true));
+                this.getLogger().info("Ey you bread! You cant display the playtime from the console!");
             }
         }
 
@@ -277,21 +288,6 @@ public class Playtime extends JavaPlugin implements Listener
                 _commandWithParas = ChatColor.translateAlternateColorCodes('&', _commandWithParas);
 
                 Bukkit.dispatchCommand(Bukkit.getConsoleSender(), _commandWithParas);
-            }
-        }
-    }
-
-    private String getTopPlayTime(String _format, Boolean _color)
-    {
-        String _returnValue = "";
-
-        List<String[]> _topPlayers = m_mysql.getTopPlayers();
-
-        for (String[] _playerData: _topPlayers)
-        {
-            if(_playerData.length >= 2)
-            {
-                _returnValue += getChatMessage(_format, UUIDCache.get(_playerData[0]), Integer.parseInt(_playerData[1]), 0, _color);
             }
         }
     }
