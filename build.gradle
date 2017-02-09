@@ -39,6 +39,7 @@ repositories {
 dependencies {
     compile group: 'org.spigotmc', name: 'spigot-api', version: '1.11.2-R0.1-SNAPSHOT'
     compile group: 'net.ess3', name: 'Essentials', version: 'Pre2.13.1.7'
+    compile name: 'sqlite-jdbc-3.16.1'
 }
 
 jar {
