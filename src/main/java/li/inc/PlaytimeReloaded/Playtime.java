@@ -23,6 +23,7 @@ package li.inc.PlaytimeReloaded;
 import com.earth2me.essentials.Essentials;
 import com.earth2me.essentials.User;
 import li.inc.PlaytimeReloaded.DataStore.Config;
+import li.inc.PlaytimeReloaded.DataStore.DB.DB;
 import li.inc.PlaytimeReloaded.DataStore.DB.MySQL;
 import li.inc.PlaytimeReloaded.DataStore.TimeCommand;
 import li.inc.PlaytimeReloaded.DataStore.UUIDCache;
@@ -43,7 +44,7 @@ import java.util.*;
 public class Playtime extends JavaPlugin implements Listener
 {
     private Config m_config;
-    private MySQL m_mysql;
+    private DB m_db;
 
     private Essentials m_pluginEssentials;
 
@@ -54,7 +55,7 @@ public class Playtime extends JavaPlugin implements Listener
         m_config = new Config(this);
 
         //Load the text from the lang config.
-        m_mysql = new MySQL(this, m_config);
+        m_db = new DB(this, m_config);
 
         //Load Essentials
         m_pluginEssentials = (Essentials)Bukkit.getServer().getPluginManager().getPlugin("Essentials");
@@ -79,7 +80,7 @@ public class Playtime extends JavaPlugin implements Listener
                 {
                     _player.sendMessage(getChatMessage(m_config.getTextTopPlayerListHead(), _player.getName(), 0, 0, true));
 
-                    List<String[]> _topPlayers = m_mysql.getTopPlayers();
+                    List<String[]> _topPlayers = m_db.getTopPlayers();
                     int _rang = 1;
                     for (String[] _playerData: _topPlayers)
                     {
@@ -107,7 +108,7 @@ public class Playtime extends JavaPlugin implements Listener
 
                     if(_player.hasPermission("playtime.use"))
                     {
-                        _player.sendMessage(getChatMessage(m_config.getTextYourCurrentPlaytime(), _player.getName(), m_mysql.getPlayerTime(_player.getUniqueId()), 0, true));
+                        _player.sendMessage(getChatMessage(m_config.getTextYourCurrentPlaytime(), _player.getName(), m_db.getPlayerTime(_player.getUniqueId()), 0, true));
                     }else{
                         _player.sendMessage(getChatMessage(m_config.getTextNoPermission(), _player.getName(), 0, 0, true));
                     }
@@ -126,12 +127,12 @@ public class Playtime extends JavaPlugin implements Listener
                         Player _player = (Player)sender;
                         if(_player.hasPermission("playtime.use.others"))
                         {
-                            _player.sendMessage(getChatMessage(m_config.getTextPlayerPlaytimeIs(), args[0], m_mysql.getPlayerTime(_searchPlayer), 0, true));
+                            _player.sendMessage(getChatMessage(m_config.getTextPlayerPlaytimeIs(), args[0], m_db.getPlayerTime(_searchPlayer), 0, true));
                         }else{
                             _player.sendMessage(getChatMessage(m_config.getTextNoPermission(), args[0], 0, 0, true));
                         }
                     }else{
-                        this.getLogger().info(getChatMessage(m_config.getTextPlayerPlaytimeIs(), args[0], m_mysql.getPlayerTime(_searchPlayer), 0, false));
+                        this.getLogger().info(getChatMessage(m_config.getTextPlayerPlaytimeIs(), args[0], m_db.getPlayerTime(_searchPlayer), 0, false));
                     }
                 }else{
                     //Spieler wurde nicht gefunden / Hat noch nicht auf dem Server gespielt.
@@ -154,7 +155,7 @@ public class Playtime extends JavaPlugin implements Listener
     {
         if(event.getPlayer().hasPermission("playtime.use") && event.getPlayer().hasPermission("playtime.login"))
         {
-            event.getPlayer().sendMessage(getChatMessage(m_config.getTextYourCurrentPlaytime(), event.getPlayer().getName(), m_mysql.getPlayerTime(event.getPlayer().getUniqueId()), 0, true));
+            event.getPlayer().sendMessage(getChatMessage(m_config.getTextYourCurrentPlaytime(), event.getPlayer().getName(), m_db.getPlayerTime(event.getPlayer().getUniqueId()), 0, true));
         }
 
         UUIDCache.update(event.getPlayer().getName(), event.getPlayer().getUniqueId());
@@ -179,11 +180,11 @@ public class Playtime extends JavaPlugin implements Listener
 
     private void addPlayTime(UUID _playerUUID, int _time)
     {
-        int _spielerPlaytime = m_mysql.getPlayerTime(_playerUUID);
+        int _spielerPlaytime = m_db.getPlayerTime(_playerUUID);
 
         _spielerPlaytime = _spielerPlaytime + _time;
 
-        m_mysql.update(_playerUUID, _spielerPlaytime);
+        m_db.update(_playerUUID, _spielerPlaytime);
 
         checkPlaytimeCommand(_playerUUID, _spielerPlaytime);
     }

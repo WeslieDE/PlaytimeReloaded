@@ -28,6 +28,13 @@ import java.util.List;
 
 public class Config 
 {
+    //DBType
+    private String m_DBType = "SQLLite";
+    public String getDBType()
+    {
+        return m_DBType;
+    }
+
 	//MySQL
 	private String m_MySqlHost = "127.0.0.1";
 	public String getMysqlHost()
@@ -128,6 +135,8 @@ public class Config
 
 	private void setDefaultConfigValues(FileConfiguration _config)
 	{
+        _config.addDefault("DB.Type", m_DBType);
+
 		_config.addDefault("mysql.host", m_MySqlHost);
 		_config.addDefault("mysql.port", m_MySqlPort);
 		_config.addDefault("mysql.db", m_MySqlDB);
@@ -153,6 +162,8 @@ public class Config
 	
 	private void getConfigValues(FileConfiguration _config)
 	{
+        m_DBType = _config.getString("DB.Type");
+
 		m_MySqlHost = _config.getString("mysql.host");
 		m_MySqlPort = _config.getInt("mysql.port");
 		m_MySqlDB = _config.getString("mysql.db");
@@ -186,6 +197,8 @@ public class Config
 	
 	private void saveConfigValues(FileConfiguration _config)
 	{
+        _config.set("DB.Type", m_DBType);
+
 		_config.set("mysql.host", m_MySqlHost);
 		_config.set("mysql.port", m_MySqlPort);
 		_config.set("mysql.db", m_MySqlDB);

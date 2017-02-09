@@ -30,14 +30,14 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
-public class MySQL
+public class MySQL implements IDB
 {
     private Plugin m_plugin;
     private Config m_config;
 
     private MySQLTools m_MySqlTools;
 
-    public MySQL(Plugin _plugin, Config _config)
+    public void init(Plugin _plugin, Config _config)
     {
         m_plugin = _plugin;
         m_config = _config;
