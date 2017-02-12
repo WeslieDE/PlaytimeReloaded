@@ -12,10 +12,10 @@ public class DB
 
     public DB(Plugin _plugin, Config _config)
     {
-        if(_config.getDBType().toLowerCase().trim() == "MySQL")
+        if(_config.getDBType().trim().equalsIgnoreCase("mysql"))
             m_DBClass = new MySQL();
 
-        if(_config.getDBType().toLowerCase().trim() == "SQLLite")
+        if(_config.getDBType().trim().equalsIgnoreCase("sqllite"))
             m_DBClass = new SQLLite();
 
         if(m_DBClass == null)
