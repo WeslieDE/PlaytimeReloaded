@@ -12,6 +12,7 @@
     <orderEntry type="module" module-name="PlaytimeReloaded_main" />
     <orderEntry type="library" name="Gradle: org.spigotmc:spigot-api:1.11.2-R0.1-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Gradle: net.ess3:Essentials:Pre2.13.1.7" level="project" />
+    <orderEntry type="library" name="Gradle: :sqlite-jdbc-3.16.1:" level="project" />
     <orderEntry type="library" name="Gradle: commons-lang:commons-lang:2.6" level="project" />
     <orderEntry type="library" name="Gradle: com.googlecode.json-simple:json-simple:1.1.1" level="project" />
     <orderEntry type="library" name="Gradle: org.avaje:ebean:2.8.1" level="project" />
