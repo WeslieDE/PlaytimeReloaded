@@ -78,7 +78,7 @@ public class UUIDCache
             }
         }
 
-        String _playerName = Bukkit.getPlayer(_playerUUID).getName();
+        String _playerName = Bukkit.getOfflinePlayer(_playerUUID).getName();
         update(_playerName, _playerUUID);
 
         return _playerName;
