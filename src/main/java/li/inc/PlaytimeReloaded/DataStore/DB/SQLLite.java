@@ -43,7 +43,7 @@ public class SQLLite implements IDB
 
         try
         {
-            m_connection = DriverManager.getConnection("jdbc:sqlite:Plugins/PlaytimeReloaded/playtime.db");
+            m_connection = DriverManager.getConnection("jdbc:sqlite:" + m_plugin.getDataFolder().getAbsolutePath() + "playtime.db");
 
             Statement _statement = m_connection.createStatement();
 
@@ -59,11 +59,14 @@ public class SQLLite implements IDB
     {
         try
         {
-            Statement _statement = m_connection.createStatement();
-            _statement.executeUpdate("DELETE FROM playtime WHERE playeruuid = '" + _playerUUID.toString() + "'");
-            _statement.executeUpdate("INSERT INTO playtime (`playeruuid`, `playtime`) VALUES ('" + _playerUUID.toString() + "', '" + _newTime + "')");
+            if(m_connection != null)
+            {
+                Statement _statement = m_connection.createStatement();
+                _statement.executeUpdate("DELETE FROM playtime WHERE playeruuid = '" + _playerUUID.toString() + "'");
+                _statement.executeUpdate("INSERT INTO playtime (`playeruuid`, `playtime`) VALUES ('" + _playerUUID.toString() + "', '" + _newTime + "')");
 
-            _statement.close();
+                _statement.close();
+            }
         }catch (SQLException _ex) {
             _ex.printStackTrace();
         }
@@ -75,22 +78,25 @@ public class SQLLite implements IDB
 
         try
         {
-            Statement _statement = m_connection.createStatement();
-            ResultSet _results = _statement.executeQuery("SELECT * FROM playtime ORDER BY playtime DESC LIMIT 5");
-
-            while (_results.next())
+            if(m_connection != null)
             {
-                try
-                {
-                    _returnList.add(new String[]{UUIDCache.get(UUID.fromString(_results.getString("playeruuid"))), _results.getString("playtime")});
-                }catch(Exception _e)
-                {
-                    return new ArrayList<String[]>();
-                }
-            }
+                Statement _statement = m_connection.createStatement();
+                ResultSet _results = _statement.executeQuery("SELECT * FROM playtime ORDER BY playtime DESC LIMIT 5");
 
-            _results.close();
-            _statement.close();
+                while (_results.next())
+                {
+                    try
+                    {
+                        _returnList.add(new String[]{UUIDCache.get(UUID.fromString(_results.getString("playeruuid"))), _results.getString("playtime")});
+                    }catch(Exception _e)
+                    {
+                        return new ArrayList<String[]>();
+                    }
+                }
+
+                _results.close();
+                _statement.close();
+            }
         }catch (SQLException _ex) {
             _ex.printStackTrace();
         }
@@ -102,22 +108,25 @@ public class SQLLite implements IDB
     {
         try
         {
-            Statement _statement = m_connection.createStatement();
-            ResultSet _results = _statement.executeQuery("SELECT * FROM playtime WHERE `playeruuid` = '" + _playerUUID.toString() + "'");
-
-            while (_results.next())
+            if(m_connection != null)
             {
-                try
-                {
-                    return _results.getInt("playtime");
-                }catch(Exception _e)
-                {
-                    return 0;
-                }
-            }
+                Statement _statement = m_connection.createStatement();
+                ResultSet _results = _statement.executeQuery("SELECT * FROM playtime WHERE `playeruuid` = '" + _playerUUID.toString() + "'");
 
-            _results.close();
-            _statement.close();
+                while (_results.next())
+                {
+                    try
+                    {
+                        return _results.getInt("playtime");
+                    }catch(Exception _e)
+                    {
+                        return 0;
+                    }
+                }
+
+                _results.close();
+                _statement.close();
+            }
         }catch (SQLException _ex) {
             _ex.printStackTrace();
         }
