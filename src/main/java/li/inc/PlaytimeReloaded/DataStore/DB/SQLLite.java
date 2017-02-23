@@ -72,7 +72,7 @@ public class SQLLite implements IDB
         }
     }
 
-    public List<String[]> getTopPlayers()
+    public List<String[]> getTopPlayers(int _count)
     {
         List<String[]> _returnList = new ArrayList<String[]>();
 
@@ -81,7 +81,7 @@ public class SQLLite implements IDB
             if(m_connection != null)
             {
                 Statement _statement = m_connection.createStatement();
-                ResultSet _results = _statement.executeQuery("SELECT * FROM playtime ORDER BY playtime DESC LIMIT 5");
+                ResultSet _results = _statement.executeQuery("SELECT * FROM playtime ORDER BY playtime DESC LIMIT " + _count);
 
                 while (_results.next())
                 {
