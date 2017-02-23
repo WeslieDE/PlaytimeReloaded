@@ -43,7 +43,7 @@ public class SQLLite implements IDB
 
         try
         {
-            m_connection = DriverManager.getConnection("jdbc:sqlite:" + m_plugin.getDataFolder().getAbsolutePath() + "playtime.db");
+            m_connection = DriverManager.getConnection("jdbc:sqlite:" + m_plugin.getDataFolder().getAbsolutePath() + "/playtime.db");
 
             Statement _statement = m_connection.createStatement();
 
