@@ -30,6 +30,6 @@ public interface IDB
 {
     public void init(Plugin _plugin, Config _config);
     public void update(UUID _playerUUID, int _newTime);
-    public List<String[]> getTopPlayers();
+    public List<String[]> getTopPlayers(int _count);
     public int getPlayerTime(UUID _playerUUID);
 }

@@ -57,9 +57,9 @@ public class MySQL implements IDB
         m_MySqlTools.saveMySQLUpdate("REPLACE INTO playtime (`playeruuid`, `playtime`) VALUES ('" + _playerUUID.toString() + "', '" + _newTime + "')", new String[]{});
     }
 
-    public List<String[]> getTopPlayers()
+    public List<String[]> getTopPlayers(int _count)
     {
-        ResultSet _rs = m_MySqlTools.saveMySQLQuarry("SELECT * FROM playtime ORDER BY playtime DESC LIMIT 5", new String[]{});
+        ResultSet _rs = m_MySqlTools.saveMySQLQuarry("SELECT * FROM playtime ORDER BY playtime DESC LIMIT " + _count, new String[]{});
         List<String[]> _returnList = new ArrayList<String[]>();
 
         if(_rs != null)

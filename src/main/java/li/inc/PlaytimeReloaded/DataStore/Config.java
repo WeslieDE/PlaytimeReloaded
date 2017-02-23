@@ -91,7 +91,7 @@ public class Config
         return m_textPlayerNotFound;
     }
 
-	private String m_textTopPlayerListHead = "This is the Top 5 player list.";
+	private String m_textTopPlayerListHead = "This is the Top %r player list.";
 	public String getTextTopPlayerListHead()
 	{
 		return m_textTopPlayerListHead;

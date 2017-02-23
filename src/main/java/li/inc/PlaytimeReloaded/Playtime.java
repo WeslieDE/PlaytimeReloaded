@@ -68,19 +68,41 @@ public class Playtime extends JavaPlugin implements Listener
             }}, 0, 1200);
     }
 
+    public static boolean isInteger(String s) {
+        try {
+            Integer.parseInt(s);
+        } catch(NumberFormatException e) {
+            return false;
+        } catch(NullPointerException e) {
+            return false;
+        }
+        // only got here if we didn't return false
+        return true;
+    }
+
     public boolean onCommand(CommandSender sender, Command cmd, String commandLabel, String[] args)
     {
         if (cmd.getName().equalsIgnoreCase("toptime"))
         {
+            int _count = 5;
+
+            if(args.length == 1)
+            {
+                if(isInteger(args[0]))
+                {
+                    _count = Integer.parseInt(args[0]);
+                }
+            }
+
             if (sender instanceof Player)
             {
                 Player _player = (Player)sender;
 
                 if(_player.hasPermission("playtime.top"))
                 {
-                    _player.sendMessage(getChatMessage(m_config.getTextTopPlayerListHead(), _player.getName(), 0, 0, true));
+                    _player.sendMessage(getChatMessage(m_config.getTextTopPlayerListHead(), _player.getName(), 0, _count, true));
 
-                    List<String[]> _topPlayers = m_db.getTopPlayers();
+                    List<String[]> _topPlayers = m_db.getTopPlayers(_count);
                     int _rang = 1;
                     for (String[] _playerData: _topPlayers)
                     {
@@ -93,7 +115,17 @@ public class Playtime extends JavaPlugin implements Listener
                     _player.sendMessage(getChatMessage(m_config.getTextNoPermission(), _player.getName(), 0, 0, true));
                 }
             }else{
-                this.getLogger().info("Ey you bread! You cant display the playtime from the console!");
+                this.getLogger().info(getChatMessage(m_config.getTextTopPlayerListHead(), "", 0, _count, false));
+
+                List<String[]> _topPlayers = m_db.getTopPlayers(_count);
+                int _rang = 1;
+                for (String[] _playerData: _topPlayers)
+                {
+                    if(_playerData.length >= 2)
+                    {
+                        this.getLogger().info(getChatMessage(m_config.getTextPlayerEntry(), _playerData[0], Integer.parseInt(_playerData[1]), _rang++, false));
+                    }
+                }
             }
         }
 

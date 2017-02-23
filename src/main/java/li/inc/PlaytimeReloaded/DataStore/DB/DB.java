@@ -29,10 +29,7 @@ public class DB
         m_DBClass.update(_playerUUID, _newTime);
     }
 
-    public List<String[]> getTopPlayers()
-    {
-        return m_DBClass.getTopPlayers();
-    }
+    public List<String[]> getTopPlayers(int _count){ return m_DBClass.getTopPlayers(_count); }
 
     public int getPlayerTime(UUID _playerUUID)
     {
