@@ -1,6 +1,6 @@
 # PlaytimeReloaded
 ### A Minecraft Bukkit/Spigot  Plugin to save and display the playtime from all players.
-Its need a mysql db to save all player data. Supports color codes in every messages/commands. Have full UUID support. Works on multiple servers (server networks). Posible to run command then a player reached a playtime.
+Its save his data to a sqllite or an mysql database. Supports color codes in every messages/commands. Have full UUID support. Works on multiple servers (server networks). Possible to run command then a player reached a playtime.
 
 ## Command List
 
