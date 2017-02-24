@@ -7,8 +7,9 @@ Its need a mysql db to save all player data. Supports color codes in every messa
 - /playtime [player]
     Show you own playtime or the playtime from [player]
 
-- /toptime
-    Show the top 5 player with the best playtime.
+- /toptime [numbers]
+    Show the top [numbers] player with the best playtime.
+	Default is 5
 
 ## Permissions
 
