@@ -1,32 +1,30 @@
 # PlaytimeReloaded
-### A Minecraft Bukkit/Spigot  Plugin to save and display the playtime from all players.
-Its save his data to a sqllite or an mysql database. Supports color codes in every messages/commands. Have full UUID support. Works on multiple servers (server networks). Possible to run command then a player reached a playtime.
+### A Spigot/paper plugin to track playtime of all players on the server.
+Track and save the playtime of all players in a SQLite or MySQL database. Supports command execution, then a player reach a defined playtime.
 
 ## Command List
 
-- /playtime [player]
-    Show you own playtime or the playtime from [player]
+- /playtime [player] 
+    Show your own playtime or the playtime from other players.
 
 - /toptime [numbers]
-    Show the top [numbers] player with the best playtime.
-	Default is 5
+    Shows the top [numbers] of players with with the highest playtime.
 
 ## Permissions
 
 - playtime.login
-The player get a playtime message at every login.
+	Shows the playtime at login.
 
 - playtime.use
-The player can use the /playtime command.
+	The player can use the /playtime command.
 
 - playtime.use.others
-The player can see the playtime from other players.
+	The player can see the playtime from other players.
 
 - playtime.top
-Can see the top 5 playtime list.
+	Can see playtime list.
 
 ## Config
-
 
 ```javascript
 mysql:
