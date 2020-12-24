@@ -10,6 +10,10 @@ Track and save the playtime of all players in a SQLite or MySQL database. Suppor
 - /toptime [numbers]
     Shows the top [numbers] of players with with the highest playtime.
 
+## Installation
+
+Download the latest build from https://ci.sahrea.de/job/PlaytimeReloaded/ and store it into your plugin folder.
+
 ## Permissions
 
 - playtime.login
