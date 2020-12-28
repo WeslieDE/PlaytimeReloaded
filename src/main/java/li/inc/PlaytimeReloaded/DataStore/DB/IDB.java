@@ -32,4 +32,5 @@ public interface IDB
     public void update(UUID _playerUUID, int _newTime);
     public List<String[]> getTopPlayers(int _count);
     public int getPlayerTime(UUID _playerUUID);
+    public void close();
 }

@@ -52,7 +52,7 @@ public class Playtime extends JavaPlugin implements Listener
 
         //Load the text from the lang config.
         if(m_db == null)
-        m_db = new DB(this, m_config);
+            m_db = new DB(this, m_config);
 
         getServer().getPluginManager().registerEvents(this, this);
 
@@ -60,6 +60,17 @@ public class Playtime extends JavaPlugin implements Listener
             public void run() {
                 refreshPlaytime();
             }}, 0, 1200);
+    }
+
+    @Override
+    public void onDisable()
+    {
+        //Load the text from the lang config.
+        if(m_db != null)
+        {
+            m_db.close();
+            m_db = null;
+        }
     }
 
     public static boolean isInteger(String s) {

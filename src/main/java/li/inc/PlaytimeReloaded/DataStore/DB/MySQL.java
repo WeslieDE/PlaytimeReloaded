@@ -111,4 +111,13 @@ public class MySQL implements IDB
 
         return 0;
     }
+
+    public void close()
+    {
+        try {
+            m_MySqlTools.getConnection().close();
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+    }
 }

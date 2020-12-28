@@ -35,4 +35,9 @@ public class DB
     {
         return m_DBClass.getPlayerTime(_playerUUID);
     }
+
+    public void close()
+    {
+        m_DBClass.close();
+    }
 }

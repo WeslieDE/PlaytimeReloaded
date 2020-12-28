@@ -133,4 +133,13 @@ public class SQLLite implements IDB
 
         return 0;
     }
+
+    public void close()
+    {
+        try {
+            m_connection.close();
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+    }
 }
