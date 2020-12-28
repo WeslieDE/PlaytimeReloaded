@@ -41,8 +41,8 @@ import java.util.*;
 
 public class Playtime extends JavaPlugin implements Listener
 {
-    private Config m_config;
-    private DB m_db;
+    private Config m_config = null;
+    private DB m_db = null;
 
     @Override
     public void onEnable()
@@ -51,6 +51,7 @@ public class Playtime extends JavaPlugin implements Listener
         m_config = new Config(this);
 
         //Load the text from the lang config.
+        if(m_db == null)
         m_db = new DB(this, m_config);
 
         getServer().getPluginManager().registerEvents(this, this);
